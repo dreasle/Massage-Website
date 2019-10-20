@@ -54,17 +54,17 @@ Scroll to top is same leaf icon with scroll to top text underneath on hover. But
 
 This is a list of tasks to complete the project
 
-[x] Set up readme file
-[x] Do initial git commit
-[] Find image for main section/title background
-[] Find logo for nav bar and scroll to top button
-[] Headshot for about page
-[] Write bio for about page
-[] Create contact form with submit button (dummy for now)
-[] Image and blurb for aromatherapy
-[] Image and blurb for cupping
-[] Image and blurb for hot foot bath
-[] Image and blurb for hot towels
-[] Select colors
-[] Select fonts
-[] Set section as "active" when in viewport
+- [x] Set up readme file
+- [x] Do initial git commit
+- [] Find image for main section/title background
+- [] Find logo for nav bar and scroll to top button
+- [] Headshot for about page
+- [] Write bio for about page
+- [] Create contact form with submit button (dummy for now)
+- [] Image and blurb for aromatherapy
+- [] Image and blurb for cupping
+- [] Image and blurb for hot foot bath
+- [] Image and blurb for hot towels
+- [] Select colors
+- [] Select fonts
+- [] Set section as "active" when in viewport
