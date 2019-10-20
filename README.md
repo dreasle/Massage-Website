@@ -63,13 +63,13 @@ This is a list of tasks to complete the project
 - [ ] Change highlight of navbar link when "active" section changes
 - [ ] Default navbar to no highlight when at top
 - [ ] Hide navbar when not scrolling
-- [ ] Add scroll to top button
-- [ ] Hide scroll to top button when at top
+- [x] Add scroll to top button
+- [x] Hide scroll to top button when at top
 - [ ] Add media queries to make site responsive to all screen sizes
 
 
 #### Design Tasks
-- [ ] Find image for main section/title background
+- [x] Find image for main section/title background
 - [ ] Find logo for nav bar and scroll to top button
 - [ ] Headshot for about page
 - [ ] Write bio for about page
@@ -78,5 +78,6 @@ This is a list of tasks to complete the project
 - [ ] Image and blurb for cupping
 - [ ] Image and blurb for hot foot bath
 - [ ] Image and blurb for hot towels
-- [ ] Select colors
+- [x] Select colors
 - [ ] Select fonts
+- [ ] Add credits for borrowed photos from unsplash

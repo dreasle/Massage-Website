@@ -1,40 +1,3 @@
-/**
- * 
- * Manipulating the DOM exercise.
- * Exercise programmatically builds navigation,
- * scrolls to anchors from navigation,
- * and highlights section in viewport upon scrolling.
- * 
- * Dependencies: None
- * 
- * JS Version: ES2015/ES6
- * 
- * JS Standard: ESlint
- * 
-*/
-
-/**
- * Define Global Variables
- * 
-*/
-
-
-/**
- * End Global Variables
- * Start Helper Functions
- * 
-*/
-
-
-
-/**
- * End Helper Functions
- * Begin Main Functions
- * 
-*/
-
-// build the nav
-
 // Get the navbar list UL
 const navBarUl = document.getElementById('navbar__list');
 
@@ -49,30 +12,28 @@ for (var section of sections) {
     navBarUl.appendChild(li);
 };
 
-
-
 // Add class 'active' to section when near top of viewport
 
-
-// Scroll to anchor ID using scrollTO event
-navBarUl.addEventListener('click', function(e) {
+// This function sets the active class to the correct section and scrolls to it.
+function scrollToFunction(e) {
     e.preventDefault();
-    // console.log(e.target.href);
+    console.log(e);
     
     // Set active class
     let sect = e.target.href.split('#')[1];
-    // console.log(sect);
+    console.log(sect);
     
     // Remove current active class
     document.querySelector('.your-active-class').classList.toggle('your-active-class');
-
+    
     // Set new active class
     document.getElementById(`${sect}`).classList.toggle('your-active-class');
-
+    
     document.querySelector('.your-active-class').scrollIntoView({ 
         behavior: 'smooth' 
-      });
     });
+};
+
 
 // navBarUl.addEventListener('click', function(e) {
 //     e.preventDefault();
@@ -90,15 +51,30 @@ navBarUl.addEventListener('click', function(e) {
     //     scrollTop: $("#target-element").offset().top
     // }, 1000);
 
+// Scroll to top button
+scrollButton = document.getElementById('btn-top');
 
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
+// Show button when not at top of doc
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+};
 
-// Build menu 
+// Add onclick function
+// scrollButton.onclick = function() {
+//     document.body.scrollTop = 0;
+//     document.documentElement.scrollTop = 0;
+// }
+// scrollButton.onclick = scrollToFunction;
 
-// Scroll to section on link click
 
-// Set sections as active
+// Event Listeners
+
+// Scroll to anchor ID using scrollTO event
+navBarUl.addEventListener('click', scrollToFunction);
+
+// Scroll to top button
+scrollButton.addEventListener('click', scrollToFunction);
