@@ -81,3 +81,5 @@ This is a list of tasks to complete the project
 - [x] Select colors
 - [ ] Select fonts
 - [ ] Add credits for borrowed photos from unsplash
+- [ ] Ease in and out scroll to top button when hiding and unhiding
+- [ ] Making scroll to top button semi-transparent
