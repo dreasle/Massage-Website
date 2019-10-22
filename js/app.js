@@ -21,7 +21,7 @@ function checkForActiveSection() {
     for (var sect of sections) {
         if (isTopOfElementNearTopOfViewport(sect)) {
             if (currentActiveSect !== sect) {
-                console.log('--------NEW STATE-------');
+                // console.log('--------NEW STATE-------');
                 newState = true;
             }
             setNewActiveClass(sect);
@@ -37,7 +37,7 @@ function setNewActiveClass(sect) {
         document.querySelector('.your-active-class').classList.toggle('your-active-class');
         
         // Toggle menu state
-        console.log('old li', document.querySelector('.li-active-state'));
+        // console.log('old li', document.querySelector('.li-active-state'));
         if (document.querySelector('.li-active-state')) {
             document.querySelector('.li-active-state').classList.toggle('li-active-state');
         }
@@ -50,7 +50,7 @@ function setNewActiveClass(sect) {
             } else {
             // Update active section link
             let navLi = document.getElementById(`nav-li-${sect.id}`);
-            console.log(navLi);
+            // console.log(navLi);
             navLi.classList.toggle('li-active-state');
         }
         newState = false;

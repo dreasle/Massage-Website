@@ -4,15 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Zen Garden | Massage Therapy</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">   -->
+  <title>North Seattle | Massage Therapy</title>
   <link href="https://fonts.googleapis.com/css?family=Bilbo|Montserrat|Ubuntu&display=swap" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/nav.css" rel="stylesheet">
 </head>
 <body>
-  <!-- HTML Follows BEM naming conventions 
-  IDs are only used for sections to connect menu achors to sections -->
-
   <!-- Navigation Header -->
   <header class="page__header">
     <nav class="navbar__menu">
@@ -28,6 +25,7 @@
     <header id="header-main" class="your-active-class">
       <h1>North Seattle<br> Massage Therapy</h1>
     </header>
+
     <!-- Sections. Nav bar populated using data-nav att and id -->
     <section id="services" data-nav="Services">
       <div class="landing__container">
@@ -35,14 +33,14 @@
         <div class="landing__content">
           <div class="landing__mt">
             <img class="img-services" id="img-services-mt" src="./img/blur-body-close-up-161477.jpg" alt="massage">
-            <img class="img-services" id="img-services-mt" src="./img/kelly-sikkema-UaO58q6ioxI-unsplash.jpg" alt="aromatherapy">
-            <img class="img-services" id="img-services-mt" src="./img/close-up-colors-design-940271.jpg" alt="stones">
+            <img class="img-services" id="img-services-ar" src="./img/kelly-sikkema-UaO58q6ioxI-unsplash.jpg" alt="aromatherapy">
+            <img class="img-services" id="img-services-hs" src="./img/close-up-colors-design-940271.jpg" alt="stones">
             <h3>Massage Therapy</h3>
             <p>I tailor your massage appointment to meet your needs. I offer appointments in 60 and 90 min sessions.</p>
             <h3>Insurance Billing</h3>
             <p>I currently do L&I and PIP claims. I'm not contracted with any insurance agency at this time (Aetna, Premera, etc) but I'm happy to provide the paperwork to you if you'd like to submit your own claim.</p>
             <h3>Complimentary Additional Services</h3>
-            <p>I love to offere additional serices to round out your massage experience. These include: Aromatherapy, hot steamed towels, cupping and a hot foot soak.</p>
+            <p>I love to offer additional serices to round out your massage experience. These include: Aromatherapy, hot steamed towels, cupping and a hot foot soak.</p>
           </div>
         </div>
       </div>
@@ -52,7 +50,6 @@
         <h2>About</h2>
         <div class="landing__content">
           <div class="landing__about">
-            <!-- <img class="img-services" src="./img/massage-massage-set-massage-tools-67721.jpg" alt="candles"> -->
             <p>I love to help others and I offer a blend of relaxation and treatment focus massage that leaves my clients feeling whole again.</p>
             <p>If I can help make my client's life easier and more enjoyable by increasing their abitily to perform their daily activites, I feel like I've accomplished my goal.</p>
             <p>I graduated from Brenneke School of Massage in 2005 and have taken a number of continuing education courses to round out the services I can provide. My toolset includes Swedish, Deep Tissue, Myofasical Release, Lymphatic Drainage, Pre-natal massage and I have experience treating stress/anxiety, tension and posture issues from Computer Work, Low Back Pain</p>
@@ -64,10 +61,9 @@
     <section id="contact" data-nav="Contact">
       <div class="landing__container">
         <h2>Contact</h2>
+        <img class="img-services" id="contact-img" src="./img/eric-rothermel-FoKO4DpXamQ-unsplash.jpg" alt="massage">
+        <p>Contact me so we can set up an appointment.</p>
         <div id="contact-form" class="landing__content">
-          <!-- <img class="img-services" src="./img/adult-body-close-up-275768.jpg" alt="candles"> -->
-          <p>Contact me so we can set up an appointment.</p>
-          
           <form action="">
               <div class="contact-form-div">
                   <label for="name">Name</label>
@@ -86,22 +82,15 @@
       </div>
       </div>
     </section>
-    <!-- <section id="intake" data-nav="Intake Forms">
-      <div class="landing__container">
-        <h2>Intake Forms</h2>
-        <div class="landing__content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-          <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-        </div>
-      </div>
-    </section> -->
     <section id="location" data-nav="Location">
       <div class="landing__container">
         <h2>Location</h2>
         <div class="landing__content">
           <p>My office is located in Seattle in the Greenwood neighborhood. There is ample and easily accessable street parking.</p>
-          <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-          <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+          <!-- Map - OpenStreetMap -->
+          <div id="location-map-container">
+            <iframe id="location-map-frame" width="300" height="225" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-122.38245964050294%2C47.66521394563678%2C-122.34872817993165%2C47.71669159916773&amp;layer=mapnik"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=14/47.6910/-122.3656">View Larger Map</a></small>
+          </div>
         </div>
       </div>
     </section>

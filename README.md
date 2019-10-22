@@ -54,34 +54,32 @@ Scroll to top is same leaf icon with scroll to top text underneath on hover. But
 
 This is a list of tasks to complete the project
 
-#### Finished Tasks
+#### Functionality/Required Tasks
 - [x] Set up readme file
 - [x] Do initial git commit
 - [x] Set section as "active" when in viewport
 - [x] Add scroll to top button
 - [x] Hide scroll to top button when at top
-
-#### Functionality/Required Tasks
 - [x] Fix when top button clicked, state changes to sections that scroll thru viewport.
 - [x] Change highlight of navbar link when "active" section changes
-- [ ] Fix navbar link color when "active" section changes
+- [x] Fix navbar link color when "active" section changes
 - [x] Default navbar to no highlight when at top
 - [ ] Hide navbar when not scrolling
 - [ ] Add media queries to make site responsive to all screen sizes
+- [x] Fade out background image of active section
+- [x] Fade in text of active section
 
 
 #### Design Tasks
 - [x] Find image for main section/title background
-- [ ] Find logo for nav bar and scroll to top button
-- [ ] Headshot for about page
-- [ ] Write bio for about page
-- [ ] Create contact form with submit button (dummy for now)
-- [ ] Image and blurb for aromatherapy
-- [ ] Image and blurb for cupping
-- [ ] Image and blurb for hot foot bath
-- [ ] Image and blurb for hot towels
+- [x] Photo for about page
+- [x] Write bio for about page
+- [x] Create contact form with submit button (dummy for now)
+- [x] Image and blurb for aromatherapy
+- [x] Image and blurb for hot foot bath
+- [x] Image and blurb for hot towels
 - [x] Select colors
-- [ ] Select fonts
+- [x] Select fonts
 - [ ] Add credits for borrowed photos from unsplash
 - [ ] Ease in and out scroll to top button when hiding and unhiding
-- [ ] Making scroll to top button semi-transparent
+- [x] Making scroll to top button semi-transparent
