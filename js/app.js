@@ -115,6 +115,11 @@ window.onscroll = function() {
         scrollButton.style.display = "block";
     } else {
         scrollButton.style.display = "none";
+        // Toggle off current active section
+        document.querySelector('.your-active-class').classList.toggle('your-active-class');
+        // Toggle on main section as active
+        document.querySelector('#main-section').classList.toggle('your-active-class');
+
     }
 };
 
