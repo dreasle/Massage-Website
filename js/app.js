@@ -18,10 +18,8 @@ for (var section of sections) {
 function checkForActiveSection() {
     const sects = document.querySelectorAll('section');
     let currentActiveSect = document.querySelector('.your-active-class');
-    // console.log(currentActiveSect);
     for (var sect of sections) {
         if (isTopOfElementNearTopOfViewport(sect)) {
-            // console.log('near top');
             if (currentActiveSect !== sect) {
                 console.log('--------NEW STATE-------');
                 newState = true;
@@ -34,28 +32,25 @@ function checkForActiveSection() {
 // Set new active class and deactiveate old one
 function setNewActiveClass(sect) {
     // Remove current active class if changed
-    console.log(newState);
     if (newState) {
-        console.log('in new state');
         // Toggle section state
-        console.log(document.querySelector('.your-active-class'));
         document.querySelector('.your-active-class').classList.toggle('your-active-class');
         
         // Toggle menu state
-        console.log(document.querySelector('.li-active-state'));
-        if (document.querySelector('li-active-state')) {
-            document.querySelector('li-active-state').classList.toggle('li-active-state');
+        console.log('old li', document.querySelector('.li-active-state'));
+        if (document.querySelector('.li-active-state')) {
+            document.querySelector('.li-active-state').classList.toggle('li-active-state');
         }
         // Set new active class
         sect.classList.toggle('your-active-class');
     
         // Update nav bar
-        console.log(sect);
         if(sect.id === 'main-section') {
             // Clear navLi active class
-        } else {
+            } else {
             // Update active section link
             let navLi = document.getElementById(`nav-li-${sect.id}`);
+            console.log(navLi);
             navLi.classList.toggle('li-active-state');
         }
         newState = false;
@@ -72,14 +67,11 @@ function isTopOfElementNearTopOfViewport(el) {
 
 // This function sets the active class to the correct section and scrolls to it.
 function scrollToActive(e) {
-    console.log('scroll to', e);
     e.preventDefault();
     
     // Set active class
     let sectId = e.target.href.split('#')[1];
-    console.log(sectId);
     newState = true;
-    // console.log(document.getElementById(sectId));
     setNewActiveClass(document.getElementById(sectId));
     
     // Scroll to active section
@@ -119,7 +111,10 @@ window.onscroll = function() {
         document.querySelector('.your-active-class').classList.toggle('your-active-class');
         // Toggle on main section as active
         document.querySelector('#main-section').classList.toggle('your-active-class');
-
+        // Reset navBar
+        if(document.querySelector('.li-active-state')) {
+            document.querySelector('.li-active-state').classList.toggle('li-active-state');
+        }
     }
 };
 

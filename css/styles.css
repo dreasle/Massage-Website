@@ -300,15 +300,12 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* ---- Theme State Rules ---- */
 
 /* Navbar Active Styles */
-/* li.li-active-state {
-    background: #333;
-    transition: ease 0.3s all;
-    
-}
-
+/* .navbar__menu .menu__link:hover { */
 li.li-active-state a {
+    background: #3f3f3f;
     color: var(--font-color-main);
-} */
+    transition: ease 0.3s all;
+}
 
 
 

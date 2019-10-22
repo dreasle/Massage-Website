@@ -57,14 +57,16 @@ This is a list of tasks to complete the project
 #### Finished Tasks
 - [x] Set up readme file
 - [x] Do initial git commit
-
-#### Functionality/Required Tasks
-- [ ] Set section as "active" when in viewport
-- [ ] Change highlight of navbar link when "active" section changes
-- [ ] Default navbar to no highlight when at top
-- [ ] Hide navbar when not scrolling
+- [x] Set section as "active" when in viewport
 - [x] Add scroll to top button
 - [x] Hide scroll to top button when at top
+
+#### Functionality/Required Tasks
+- [x] Fix when top button clicked, state changes to sections that scroll thru viewport.
+- [x] Change highlight of navbar link when "active" section changes
+- [ ] Fix navbar link color when "active" section changes
+- [x] Default navbar to no highlight when at top
+- [ ] Hide navbar when not scrolling
 - [ ] Add media queries to make site responsive to all screen sizes
 
 
