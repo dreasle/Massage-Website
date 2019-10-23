@@ -17,7 +17,7 @@ for (var section of sections) {
 // Add class 'active' to section when near top of viewport
 function checkForActiveSection() {
     const sects = document.querySelectorAll('section');
-    let currentActiveSect = document.querySelector('.your-active-class');
+    let currentActiveSect = document.querySelector('.active-section');
     for (var sect of sections) {
         if (isTopOfElementNearTopOfViewport(sect)) {
             if (currentActiveSect !== sect) {
@@ -34,7 +34,7 @@ function setNewActiveClass(sect) {
     // Remove current active class if changed
     if (newState) {
         // Toggle section state
-        document.querySelector('.your-active-class').classList.toggle('your-active-class');
+        document.querySelector('.active-section').classList.toggle('active-section');
         
         // Toggle menu state
         // console.log('old li', document.querySelector('.li-active-state'));
@@ -42,10 +42,10 @@ function setNewActiveClass(sect) {
             document.querySelector('.li-active-state').classList.toggle('li-active-state');
         }
         // Set new active class
-        sect.classList.toggle('your-active-class');
+        sect.classList.toggle('active-section');
     
         // Update nav bar
-        if(sect.id === 'main-section') {
+        if(sect.id === 'main-container') {
             // Clear navLi active class
             } else {
             // Update active section link
@@ -57,8 +57,8 @@ function setNewActiveClass(sect) {
     }
 }
 
+// This function calculates if the top of the element is in the upper third of the viewport.
 function isTopOfElementNearTopOfViewport(el) {
-    // This function calculates if the top of the element is in the upper third of the viewport.
     const rect = el.getBoundingClientRect();
     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
     const vertNearTop = (rect.top >= 0) && ((rect.top) <= (rect.height / 3));
@@ -75,7 +75,7 @@ function scrollToActive(e) {
     setNewActiveClass(document.getElementById(sectId));
     
     // Scroll to active section
-    document.querySelector('.your-active-class').scrollIntoView({ 
+    document.querySelector('.active-section').scrollIntoView({ 
         behavior: 'smooth' 
     });
 };
@@ -108,9 +108,9 @@ window.onscroll = function() {
     } else {
         scrollButton.style.display = "none";
         // Toggle off current active section
-        document.querySelector('.your-active-class').classList.toggle('your-active-class');
+        document.querySelector('.active-section').classList.toggle('active-section');
         // Toggle on main section as active
-        document.querySelector('#main-section').classList.toggle('your-active-class');
+        document.querySelector('#main-container').classList.toggle('active-section');
         // Reset navBar
         if(document.querySelector('.li-active-state')) {
             document.querySelector('.li-active-state').classList.toggle('li-active-state');

@@ -64,10 +64,12 @@ This is a list of tasks to complete the project
 - [x] Change highlight of navbar link when "active" section changes
 - [x] Fix navbar link color when "active" section changes
 - [x] Default navbar to no highlight when at top
-- [ ] Hide navbar when not scrolling
-- [ ] Add media queries to make site responsive to all screen sizes
+- [x] Add media queries to make site responsive to all screen sizes
 - [x] Fade out background image of active section
 - [x] Fade in text of active section
+- [x] Clean up code, combine css styles when possible
+- [x] Remove unused ids, classes and elements
+- [x] Fix jumpy scrolling between sections and scroll to top
 
 
 #### Design Tasks
@@ -80,6 +82,8 @@ This is a list of tasks to complete the project
 - [x] Image and blurb for hot towels
 - [x] Select colors
 - [x] Select fonts
-- [ ] Add credits for borrowed photos from unsplash
-- [ ] Ease in and out scroll to top button when hiding and unhiding
 - [x] Making scroll to top button semi-transparent
+- [x] Background photos should span entire width
+- [x] Fix large gap under About section
+- [x] Main Title too hard to read
+- [x] Add additional small images and make responsive in flex

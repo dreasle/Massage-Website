@@ -53,3 +53,19 @@
     background-color: #555;
     transition: ease 0.3s all;
 }
+
+
+@media (max-width: 600px) {
+    #btn-top {
+        bottom: 1rem;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+    .navbar__menu .menu__link {
+        font-size: .8rem;
+    }
+
+}
