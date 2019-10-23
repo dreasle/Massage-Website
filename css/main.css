@@ -40,8 +40,8 @@ p {
 }
 
 /* ---Sections--- */
-/* Main */
 
+/* Main */
 main {
     margin: 0 0 10vh;
     min-height: 95vh;
@@ -49,15 +49,12 @@ main {
 }
 
 #main-header {
-    /* display: none; */
     padding: 20vh 0;
     text-align: center;
     background-image: url("../img/dawid-zawila-zb2vBaHYB2I-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* background-position: 25% 75%; */
-    /* background-position: 0 0 0 0; */
 }
 
 section {
@@ -91,7 +88,6 @@ section:nth-of-type(even) .container {
 /* Small Images */
 .img-container {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
@@ -123,7 +119,6 @@ content: "";
     position: absolute;
     z-index: -1;
     transition: ease 2s all;
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: 100% 100%;
 }
@@ -154,7 +149,6 @@ content: "";
     padding: 10px;
     border: 1px #ddd solid;
     opacity: .4;
-    /* background: #d6d4d473; */
 }
 
 #contact-form input:focus, 
@@ -204,7 +198,6 @@ content: "";
 #location::after {
     content: "";
     background: url("../img/kirill-x_VOtnVJeGE-unsplash.jpg");
-    /* margin-left: 0; */
     opacity: 1;
     top: 0;
     left: 0;
@@ -213,7 +206,6 @@ content: "";
     position: absolute;
     z-index: -1;
     transition: ease 4s all;
-    /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: 100% 100%;
 }
@@ -262,13 +254,6 @@ content: "";
     }
     section:nth-of-type(even) .container {
         margin-left: 4em;
-    }
-
-    .img-sm {
-        /* height: 9rem; */
-    }
-    .img-sm:nth-of-type(even) {
-        /* display: none; */
     }
 }
 

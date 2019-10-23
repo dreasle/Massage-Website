@@ -3,8 +3,6 @@ const navBarUl = document.getElementById('navbar__list');
 
 var newState = false;
 
-// **** // ADD DOCUMENT FRAGMENT HERE???
-
 // Get the list of sections and add to the navbar list UL with links
 const sections = document.querySelectorAll('section');
 for (var section of sections) {
@@ -21,7 +19,6 @@ function checkForActiveSection() {
     for (var sect of sections) {
         if (isTopOfElementNearTopOfViewport(sect)) {
             if (currentActiveSect !== sect) {
-                // console.log('--------NEW STATE-------');
                 newState = true;
             }
             setNewActiveClass(sect);
@@ -37,7 +34,6 @@ function setNewActiveClass(sect) {
         document.querySelector('.active-section').classList.toggle('active-section');
         
         // Toggle menu state
-        // console.log('old li', document.querySelector('.li-active-state'));
         if (document.querySelector('.li-active-state')) {
             document.querySelector('.li-active-state').classList.toggle('li-active-state');
         }
@@ -50,7 +46,6 @@ function setNewActiveClass(sect) {
             } else {
             // Update active section link
             let navLi = document.getElementById(`nav-li-${sect.id}`);
-            // console.log(navLi);
             navLi.classList.toggle('li-active-state');
         }
         newState = false;
@@ -79,24 +74,6 @@ function scrollToActive(e) {
         behavior: 'smooth' 
     });
 };
-
-// Other ScrollTo animations
-
-// navBarUl.addEventListener('click', function(e) {
-//     e.preventDefault();
-//     // Set active class
-//     let sect = e.target.href.split('#')[1];
-//     console.log(sect);
-    
-//     $('html, body').animate({
-//         scrollTop: $("#sect").offset().top
-//     }, 1000);
-// });
-
-// Great scroll animation below:
-    // $('html, body').animate({
-    //     scrollTop: $("#target-element").offset().top
-    // }, 1000);
 
 // Scroll to top button
 scrollButton = document.getElementById('btn-top');
