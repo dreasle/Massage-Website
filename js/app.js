@@ -12,9 +12,9 @@ for (var section of sections) {
     navBarUl.appendChild(li);
 };
 
-// Add class 'active' to section when near top of viewport
+// Get current active section and set classes.
 function checkForActiveSection() {
-    const sects = document.querySelectorAll('section');
+    let sects = document.querySelectorAll('section');
     let currentActiveSect = document.querySelector('.active-section');
     for (var sect of sections) {
         if (isTopOfElementNearTopOfViewport(sect)) {
@@ -52,7 +52,7 @@ function setNewActiveClass(sect) {
     }
 }
 
-// This function calculates if the top of the element is in the upper third of the viewport.
+// This function calculates if the top of the element is in the upper third of the viewport and returns true/false.
 function isTopOfElementNearTopOfViewport(el) {
     const rect = el.getBoundingClientRect();
     const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
@@ -78,12 +78,25 @@ function scrollToActive(e) {
 // Scroll to top button
 scrollButton = document.getElementById('btn-top');
 
-// Show button when not at top of doc
-window.onscroll = function() {
+// https://joshbroton.com/hooking-up-to-the-window-onscroll-event-without-killing-your-performance/
+var didScroll = false;
+
+function scrolling() {
+    didScroll = true;
+}
+
+// Scrolling event handler
+function handleScroll() {
+    console.log('onscroll');
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        // Show scroll to top button when not at top of doc
         scrollButton.style.display = "block";
+        // Check for the active section
+        checkForActiveSection();
     } else {
+        // Hide scroll to top button when at top of doc
         scrollButton.style.display = "none";
+        // Reset active section to main
         // Toggle off current active section
         document.querySelector('.active-section').classList.toggle('active-section');
         // Toggle on main section as active
@@ -95,6 +108,13 @@ window.onscroll = function() {
     }
 };
 
+ setInterval(function() {
+    if(didScroll) {
+        didScroll = false;
+        handleScroll();
+    }
+}, 200);
+
 
 // Event Listeners
 
@@ -105,4 +125,4 @@ navBarUl.addEventListener('click', scrollToActive);
 scrollButton.addEventListener('click', scrollToActive);
 
 // Check for active section upon scroll
-window.addEventListener('scroll', checkForActiveSection);
+window.addEventListener('scroll', scrolling);

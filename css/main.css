@@ -5,6 +5,7 @@
     --background-color-light: rgb(122,141,155);
     --background-color-light-gradient: rgba(122,141,155,1);
     --border-color: rgb(255, 185, 77);
+    --shadow-color: rgb(245, 217, 175);
     --font-color-main: #fff;
     --font-color-dark: #000;
 }
@@ -23,7 +24,7 @@ h1 {
     font-size: 5em;
     margin: 2em 1rem;
     color: var(--font-color-dark);
-    text-shadow: 2px 2px 2px var(--font-color-main);
+    text-shadow: 2px 2px 2px var(--shadow-color);
 }
 
 h2 {
@@ -72,10 +73,10 @@ section {
     margin-right: 25vw;
 }
 
-.container p,
+/* .container p,
 .container h3 {
     opacity: .4;
-}
+} */
 
 section:nth-of-type(even) .container {
     margin-left: 25vw;
@@ -99,11 +100,11 @@ section:nth-of-type(even) .container {
 /* Services */
 
 /* Services - Active State */
-#services.active-section .container h3,
-#services.active-section .container p,
+/* #services.active-section .container h3,
+#services.active-section .container p, */
 #services.active-section .img-sm {
     opacity: 1;
-    transition: ease 3s all;
+    /* transition: ease 1s all; */
 }
 
 
@@ -118,7 +119,7 @@ content: "";
     right: 0;
     position: absolute;
     z-index: -1;
-    transition: ease 2s all;
+    /* transition: ease 1s all; */
     background-size: cover;
     background-position: 100% 100%;
 }
@@ -128,10 +129,10 @@ content: "";
     opacity: .4;
 }
 
-#about.active-section .container p {
+/* #about.active-section .container p {
     opacity: 1;
     transition: ease 3s all;
-}
+} */
 
 /* Contact */
 #contact-form .contact-form-div {
@@ -148,7 +149,7 @@ content: "";
     width: 95%;
     padding: 10px;
     border: 1px #ddd solid;
-    opacity: .4;
+    /* opacity: .4; */
 }
 
 #contact-form input:focus, 
@@ -161,19 +162,20 @@ content: "";
     height: 200px;
 }
 
-#contact-form label {
+/* #contact-form label {
     opacity: .4;
     transition: ease 3s all;
-}
+} */
 
 /* Contact - Active State */
-#contact.active-section .img-sm,
+#contact.active-section .img-sm {
+/* #contact.active-section .img-sm,
 #contact.active-section p,
 #contact.active-section #contact-form label,
 #contact.active-section input, 
-#contact.active-section textarea {
+#contact.active-section textarea { */
     opacity: 1;
-    transition: ease 3s all;
+    /* transition: ease 1s all; */
 }
 
 
@@ -205,7 +207,7 @@ content: "";
     right: 0;
     position: absolute;
     z-index: -1;
-    transition: ease 4s all;
+    /* transition: ease 1s all; */
     background-size: cover;
     background-position: 100% 100%;
 }
@@ -216,10 +218,10 @@ content: "";
     opacity: .4;
 }
 
-#location.active-section .container p {
+/* #location.active-section .container p {
     opacity: 1;
     transition: ease 3s all;
-}
+} */
 
 /* Header */
 .page__header {
