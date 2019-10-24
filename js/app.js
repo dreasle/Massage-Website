@@ -108,7 +108,7 @@ function handleScroll() {
     }
 };
 
- setInterval(function() {
+setInterval(function() {
     if(didScroll) {
         didScroll = false;
         handleScroll();
